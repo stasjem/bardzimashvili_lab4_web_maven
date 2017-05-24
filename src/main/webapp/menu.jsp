@@ -1,3 +1,5 @@
+<%@ page import="bardzimashvili.db.DirAndFiles" %>
+<% new DirAndFiles(); %>
 <td width="20%" align="center" valign="top">
     Menu
     <hr>

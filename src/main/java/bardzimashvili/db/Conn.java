@@ -27,7 +27,7 @@ public class Conn
         {
             e.printStackTrace();
         }
-        conn = DriverManager.getConnection("jdbc:sqlite:TEST1.s3db");
+        conn = DriverManager.getConnection("jdbc:sqlite:./resources/TEST1.s3db");
     }
 
     /**
