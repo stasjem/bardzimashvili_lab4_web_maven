@@ -1,0 +1,11 @@
+table {
+    /* Border */
+    border: 1px solid #000000;
+
+    /* Gradient */
+    background: #fff;
+    /* Box-Shadow */
+    -webkit-box-shadow: 0px 0px 100px -3px #000000;
+    -moz-box-shadow: 0px 0px 100px -3px #000000;
+    box-shadow: 0px 0px 100px -3px #000000;
+}

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+         version="2.4">
+
+    <display-name>HelloWorld Application</display-name>
+    <description>
+        This is a simple web application with a source code organization
+        based on the recommendations of the Application Developer's Guide.
+    </description>
+
+    <servlet>
+        <servlet-name>InputServletPartOne</servlet-name>
+        <servlet-class>bardzimashvili.InputServletPartOne</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>InputServletPartOne</servlet-name>
+        <url-pattern>/InputServletPartOne</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>InputServletPartTwo</servlet-name>
+        <servlet-class>bardzimashvili.InputServletPartTwo</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>InputServletPartTwo</servlet-name>
+        <url-pattern>/InputServletPartTwo</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AllListServlet</servlet-name>
+        <servlet-class>bardzimashvili.AllListServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AllListServlet</servlet-name>
+        <url-pattern>/AllListServlet</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>EditServlet</servlet-name>
+        <servlet-class>bardzimashvili.EditServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EditServlet</servlet-name>
+        <url-pattern>/EditServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UpdateServlet</servlet-name>
+        <servlet-class>bardzimashvili.UpdateServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateServlet</servlet-name>
+        <url-pattern>/UpdateServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteServlet</servlet-name>
+        <servlet-class>bardzimashvili.DeleteServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteServlet</servlet-name>
+        <url-pattern>/DeleteServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SearchServlet</servlet-name>
+        <servlet-class>bardzimashvili.SearchServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SearchServlet</servlet-name>
+        <url-pattern>/SearchServlet</url-pattern>
+    </servlet-mapping>
+
+</web-app>
