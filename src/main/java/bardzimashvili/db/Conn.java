@@ -27,7 +27,8 @@ public class Conn
         {
             e.printStackTrace();
         }
-        conn = DriverManager.getConnection("jdbc:sqlite:./resources/TEST1.s3db");
+        //conn = DriverManager.getConnection("jdbc:sqlite:./resources/TEST1.s3db");
+        conn = DriverManager.getConnection("jdbc:sqlite:TEST1.s3db");
     }
 
     /**
@@ -48,6 +49,12 @@ public class Conn
 
         statmt.execute("CREATE TABLE if not exists 'subcategory' " +
                            "('id' INTEGER PRIMARY KEY AUTOINCREMENT, 'name' text, category_id INT);");
+
+        statmt.execute("CREATE TABLE if not exists 'users' " +
+                           "('id' INTEGER PRIMARY KEY AUTOINCREMENT, 'name' text, tag_id INT);");
+
+        statmt.execute("CREATE TABLE if not exists 'tag' " +
+                           "('id' INTEGER PRIMARY KEY AUTOINCREMENT, 'name' text);");
     }
 
     /**
