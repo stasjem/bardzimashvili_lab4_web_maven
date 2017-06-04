@@ -1,6 +1,6 @@
 package bardzimashvili.ejb;
 
-public class UsersEJB implements UserEJBRemote
+public class UsersEJB implements UsersHome
 {
     private String name;
     private String tag;
@@ -15,7 +15,6 @@ public class UsersEJB implements UserEJBRemote
         this.tag = tag;
     }
 
-
     public String getName()
     {
         return name;
@@ -25,4 +24,6 @@ public class UsersEJB implements UserEJBRemote
     {
         this.name = name;
     }
+
+
 }
