@@ -75,4 +75,9 @@
         <url-pattern>/SearchServlet</url-pattern>
     </servlet-mapping>
 
+    <!--<servlet-mapping>
+        <servlet-name>SearchServlet</servlet-name>
+        <url-pattern>/SearchServlet</url-pattern>
+    </servlet-mapping>-->
+
 </web-app>
