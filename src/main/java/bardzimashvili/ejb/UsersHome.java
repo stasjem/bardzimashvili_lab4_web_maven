@@ -7,8 +7,8 @@ import java.rmi.RemoteException;
 
 public interface UsersHome extends EJBHome
 {
-    public void create(String name, String tag) throws CreateException, RemoteException;
-    public void findUser() throws FinderException, RemoteException;
-    public String findByPrimaryKey (String primaryKey) throws RemoteException, FinderException;
+    Users create() throws CreateException, RemoteException;
+    Users findUser() throws FinderException, RemoteException;
+    String findByPrimaryKey (String primaryKey) throws RemoteException, FinderException;
 
 }

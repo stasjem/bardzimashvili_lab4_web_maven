@@ -5,54 +5,22 @@ import java.rmi.RemoteException;
 
 public class UsersEJB implements UsersHome
 {
-    private int id;
-    private String name;
-    private String tag;
-
-    public String getTag()
+    @Override
+    public Users create() throws CreateException, RemoteException
     {
-        return tag;
-    }
-
-    public void setTag(String tag)
-    {
-        this.tag = tag;
-    }
-
-    public String getName()
-    {
-        return name;
-    }
-
-    public void setName(String name)
-    {
-        this.name = name;
-    }
-
-    public int getId()
-    {
-        return id;
-    }
-
-    public void setId(int id)
-    {
-        this.id = id;
+        return null;
     }
 
     @Override
-    public void createUser() throws CreateException, RemoteException
+    public Users findUser() throws FinderException, RemoteException
     {
-    }
-
-    @Override
-    public void findUser() throws FinderException, RemoteException
-    {
+        return null;
     }
 
     @Override
     public String findByPrimaryKey(String primaryKey) throws RemoteException, FinderException
     {
-        return primaryKey;
+        return null;
     }
 
     @Override
